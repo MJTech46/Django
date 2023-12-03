@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All links</title>
     <style>
-        body{
-            background-color: rgb(52, 53, 65);
-            color: white;
-        }
+      body {
+        background-color: rgb(52, 53, 65);
+        color: white;
+      }
+      a {
+        color: white;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <ol>
-        {% for url in urls %}
-            <li><a href="{{url}}">{{url}}</a></li>
-        {% endfor %}
+      {% for url in urls %}
+      <li><a href="{{url}}">{{url}}</a></li>
+      {% endfor %}
     </ol>
-</body>
+  </body>
 </html>
