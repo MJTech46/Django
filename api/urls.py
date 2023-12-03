@@ -19,4 +19,5 @@ from . import views
 
 urlpatterns = [
     path('', views.apiHome, name='home'),
+    path('ytdownloader/<path:url>/', views.ytdownloader),
 ]
