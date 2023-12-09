@@ -19,6 +19,14 @@ def purify_links(url):
         for i in url:
             new_url=new_url+i+'/'
         return new_url
+    #for question
+    elif '(?P<question>[^/]+)' in url:
+        url = url.split('/')
+        url = url[:2]+['<question>']
+        new_url=''
+        for i in url:
+            new_url=new_url+i+'/'
+        return new_url
     #if None
     else:
         return url
